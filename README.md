@@ -1,2 +1,2 @@
 # marau
- Página de vendas
+ vendas
