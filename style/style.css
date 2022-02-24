@@ -1,0 +1,645 @@
+@charset "UTF-8";
+
+
+
+
+@font-face {
+    font-family:'BerkshireSwash-Regular' ;
+    src: url('../Fontes/BerkshireSwash-Regular.ttf');
+}
+@font-face {
+    font-family:'JosefinSans-SemiBold' ;
+    src: url('../Fontes/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family:'Adeline' ;
+    src: url('../Fontes/Adeline.ttf');
+}
+:root{
+     --cor1:#292828;
+     --cor2:#f5a511;
+     --cor3:#eed3ab;
+     --cor4:#8C4830;
+     --cor5:#da93116b;
+
+     --font-titulo1:'BerkshireSwash-Regular', 'cursiva';
+     --font-paragrafos:'JosefinSans-SemiBold', 'cursiva';
+     --font-titulo2:'Adeline','cursiva';
+
+ } 
+ *{
+    margin: 0;
+    padding: 0;
+       
+}    
+body{
+    background-color: var(--cor5);
+    background-image: url('../img/papel\ de\ parede.jpg');
+    
+
+}
+main{
+    min-width: 280px;
+    max-width: 1000px;
+    height: 2300px;
+    margin: auto;
+    border-radius:  10px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+}
+
+ /*inicio do header*/
+ .logo{
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-around;
+    height:90px;
+    
+    padding-top: 35px;
+ }
+ .logo > h1{
+     color: aliceblue;
+     font-size: 40px;
+     color: var(--cor3);
+     position: relative;
+ }
+a:hover {
+    color: #FFFAF2;
+    background-color: #8C0303;
+}
+nav > a{
+    color: aliceblue;
+    text-decoration: none;
+   margin-left: 20px;
+   font-size: 20px;
+   color: var(--cor2);
+   transition-duration: 0.2s;
+}
+.nome-marau{
+    background: url('../img/capa1.jpg') no-repeat fixed;
+    height: 200px;
+    padding:8em;
+    /* margin-top: 5px; */
+    
+   
+ }
+
+ .nome-marau > h1 {
+     text-align: center;
+     font-family: var(--font-titulo2);
+     color: var(--cor3);
+     letter-spacing: 3px;
+     font-size: 7em;
+     text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+.nome-marau > p{
+     text-align: center;
+     color: var(--cor3);
+     font-size: 2em;
+     padding: 10px;
+}
+.horario{
+    margin-left: 590px;
+    background: url('../img/img1.1.jpeg') no-repeat ;
+    height: 30em;
+   margin-right: 1em;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+   
+}
+.horario > p {
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+.horario > h2 {
+    padding: 5em;
+    text-align: center;
+    color:white;
+}
+
+.apresentacao{
+    margin-top: 8em;
+    text-align: left;
+    position: absolute;
+    top: 550px;
+   
+}
+
+.apresentacao > p{
+    font-size: 20px;
+   margin-left: 30px;
+    font-family: var(--font-paragrafos); 
+}
+
+.apresentacao > h2{
+    font-size: 40px;
+    padding: 10px;
+    font-style: italic;
+}
+/* Fim da parte de apresentação */
+
+/* Inicio do cardapio */
+.cardapio{
+    background-color:var(--cor4);
+    margin-top: 200px;
+    height: 200px;
+    width: 1000px;
+    margin-bottom: 30px;
+  
+        
+}
+.cardapio > img{
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+.cardapio > p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: var(--font-paragrafos);
+}
+.cardapio > h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+.imagens-cardapio1{
+   
+    display: flex;
+    height: 100px;
+    width: 100px;
+    
+   
+}
+.imagens-cardapio1 h2{
+margin-left: 20px;
+}
+
+.imagens-cardapio1 li{
+    margin-left: 20px;
+    list-style: none;
+    font-family: var(--font-paragrafos);
+}
+.imagens-cardapio2{
+   
+    display: flex;
+    height: 100px;
+    width: 100px;
+   
+}
+.imagens-cardapio2 h2{
+margin-left: 20px;
+}
+
+.imagens-cardapio2 li{
+    font-family: var(--font-paragrafos);
+    margin-left: 20px;
+    list-style: none;
+}
+
+/*  */
+
+.imagens-cardapio2 > img{
+    width: 200px;
+   
+}
+.imagens-cardapio2{
+    margin: 15px;
+    display: flex;
+    margin-top: 15em;    
+}
+.imagens-cardapio2 > h2{
+    margin-left: 10px;
+    text-align: justify;
+}
+.imagens-cardapio2 > p{
+    text-align: justify;
+   
+   
+}
+/*  */
+
+
+/*  */
+
+.rodape{
+  background: url('../img/horario2.jpg') no-repeat fixed ;
+  background-size: cover; 
+ margin-top: 300px;
+ height: 358px;    
+}
+.rodape > h2{
+    text-align: center;
+    color: var(--cor3);
+    font-size: 50px;
+    padding-top: 100px; 
+    font-family: var(--font-paragrafos);
+}
+.rodape > p{
+    text-align: center;
+    color: var(--cor4);
+    font-size: 35px;
+    padding: 30px;
+}
+.ultimo{
+    background-color: var(--cor1);
+    margin-top:px ;
+    height: 80px;
+}
+.ultimo > p{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor3);
+    font-size: 18px;
+    
+}
+
+/* ----------inicio cardapio------------- */
+
+.main-cardapio{
+    min-width: 280px;
+    max-width: 1000px;
+    height: 3900px;
+    margin: auto;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+}
+
+
+.logo-cardapio {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-around;
+    height:90px;
+    
+    padding-top: 35px;
+ }
+ .logo-cardapio > h1{
+     color: aliceblue;
+     font-size: 40px;
+     color: var(--cor3);
+     position: relative;
+ }
+a:hover {
+    color: #FFFAF2;
+    background-color: #8C0303;
+}
+nav > a{
+    color: aliceblue;
+    text-decoration: none;
+   margin-left: 20px;
+   font-size: 20px;
+   color: var(--cor5);
+   transition-duration: 0.5s;
+}
+/* -------inicio do cardapio---- */
+#main-cardapio{
+    background-color: antiquewhite;
+}
+.menu3{
+    background: url('../img/cardapio1.jpg') no-repeat fixed;
+    height: 400px;
+}
+.menu3 h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+    color: var(--cor3);
+}
+.menu3 > img{
+    margin-left: 370px;
+    align-items: center;
+}
+.menu{
+    text-align: center;
+}
+.menu > ul{
+    background-color: #8C0303;
+    
+    list-style: none;
+    font-size: 25px;
+    padding: 40px;
+    margin-top: 20px; 
+}
+
+.burger1 > ul{
+   margin-top: 20px;
+    list-style: none;
+    display: flex;
+    margin-left: 25px;
+     font-family: var(--font-paragrafos);
+}
+
+.burger2 > ul{
+    list-style: none;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 50px;
+    font-family: var(--font-paragrafos);
+
+}
+/* inicio de bebidas */
+.bebidas ul{
+    background-color: #8C0303;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+  
+}
+
+.bebidas1 > ul{
+    
+    list-style: none;
+    margin-left: 35px;
+}
+.bebidas1 li {
+    list-style: none;
+}
+.bebidas img{
+    width: 6em;
+  
+}
+/* fim de bebidas */
+
+
+/* -------inicio do bloco de pstiscos--------- */
+
+.menu-petisco {
+    background-color: #8C0303;
+    font-size: 20px;
+   margin-top: 20px;
+   text-align: center;
+}
+.menu-petisco > ul{
+    margin-left: 25px;
+}
+.menu1-petisco > ul{
+    
+    list-style: none;
+    margin-left: 25px;
+}
+.menu-petisco li {
+    list-style: none;
+}
+.menu-petisco img{
+    width: 6em;
+  
+}
+/* ---Fim do petisco---- */
+/* -------inicio de açaí--------- */
+.menu-acai{
+    text-align: center;
+
+}
+.menu-acai ul{
+    background-color: #8C0303;
+    list-style: none;
+    font-size: 25px;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: var(--font-paragrafos);
+}
+.menu-acai img{
+    width: 13em;
+  
+}
+/* -------Fim de açaí--------- */
+
+/* -------inico do rodape--------- */
+
+.rodape-cardapio{
+    background: url('../img/horario2.jpg') no-repeat fixed ;
+    background-size: cover; 
+   margin-top: 40px;
+   height: 358px;    
+  }
+  .rodape-cardapio > h2{
+      text-align: center;
+      color: var(--cor3);
+      font-size: 50px;
+      padding-top: 100px; 
+      font-family: var(--font-paragrafos);
+  }
+  .rodape-cardapio > p{
+      text-align: center;
+      color: var(--cor4);
+      font-size: 35px;
+      padding: 30px;
+  }
+  .ultimo-cardapio{
+      background-color: var(--cor1);
+      margin: top 20px;
+      height: 80px;
+  }
+  .ultimo-cardapio > p{
+      padding: 20px;
+      text-align: center;
+      color: var(--cor3);
+      font-size: 18px;
+      
+  }
+
+
+  /* --------------FIM DO CARDAPIO! */
+
+  .main-quem-somos{
+    min-width: 280px;
+    max-width: 1000px;
+    height: 1520px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+  }
+  .quem-somos{
+      background-color: #FFFAF2;
+  }
+.quem-somos ul{
+    list-style: none;
+    background: url('../img/quemsomos.jpg') no-repeat fixed;
+    height: 400px;
+    margin-bottom: 50px;
+  
+}
+.quem-somos li{
+  
+   text-align: center;
+    padding: 100px;
+    margin: auto;
+    color: var(--cor3);
+    font-size: 40px;
+}  
+.quem-somos img{
+    margin-left: 30px;
+   
+}
+.container > h2{
+    
+    margin-left: 20px;
+    font-size: xx-large;
+    padding: 5px;
+    text-align: left;
+    
+}
+
+.container  p{
+    margin-left: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: var(--font-paragrafos);
+}
+
+.container > img{
+    
+    margin-right: 30px;
+    border-radius: 20px;
+}
+.container {
+    display: flex;
+}
+.container1{
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* ---  FIM DE QUEM SOMOS--- */
+
+/* --INICIO DE COMODIDADES--- */
+.comodidade{
+    background-color: #8C0303;
+}
+.comodidade >ul{
+    display: flex;
+   
+    list-style: none;
+   text-align: center;
+    margin-left: 50px;  
+}
+
+.comodidade h1{
+    margin: top 2px;
+    font-size: 40px;
+ margin-left: 200px;
+ 
+}
+.comodidade li{
+    margin-left: 90px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+/* --INICIO DE RODAPE DE QUEM SOMOS-- */
+
+.rodape-quem-somos{
+    background: url('../img/horario2.jpg') no-repeat fixed ;
+    background-size: cover; 
+   margin-top: 0px;
+   height: 358px;    
+  }
+ .rodape-quem-somos > h2{
+    font-family: var(--font-paragrafos);
+      text-align: center;
+      color: var(--cor3);
+      font-size: 50px;
+      padding-top: 100px; 
+  }
+  .rodape-quem-somos> p{
+      text-align: center;
+      color: var(--cor4);
+      font-size: 35px;
+      padding: 30px;
+  }
+  .ultimo-quem-somos{
+      background-color: var(--cor1);
+      margin: top 20px;
+      height: 80px;
+  }
+  .ultimo-quem-somos > p{
+      padding: 20px;
+      text-align: center;
+      color: var(--cor3);
+      font-size: 18px;
+      
+  }
+
+  /* INICIO DE CONTATO */
+  .main-contato{
+    min-width: 280px;
+    max-width: 1000px;
+    height: 1500px;
+    margin: auto;
+    border-radius:  10px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+  }
+.contato1{
+ background: url('../img/fundo-contato.jpg' ) no-repeat fixed;
+ height: 400px;
+}
+.contato1 h1 {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 60px;
+    color: var(--cor3);
+    font-family: var(--font-titulo);
+}
+.contato1 p{
+    text-align: center;
+    font-size: 40px;
+    color: var(--cor4);
+}
+.contato1 img{
+margin-left: 375px;
+margin-top: 20px;
+}
+
+.contato2 h1{
+    text-align: center;
+    padding: 20px;
+}
+.contato2 p{
+    text-align: center;
+  
+}
+    
+    /* -------INICIO DE RODAPE DO CONTATO---------- */
+  
+  .rodape-contato{
+    background: url('../img/horario2.jpg') no-repeat fixed ;
+    background-size: cover; 
+   margin-top: 0px;
+   height: 358px;    
+  }
+  .rodape-contato > h2{
+      text-align: center;
+      color: var(--cor3);
+      font-size: 50px;
+      padding-top: 100px; 
+  }
+  .rodape-contato > p{
+      text-align: center;
+      color: var(--cor4);
+      font-size: 35px;
+      padding: 30px;
+  }
+  .ultimo-contato{
+      background-color: var(--cor1);
+      margin: top 20px;
+      height: 80px;
+  }
+  .ultimo-contato > p{
+      padding: 20px;
+      text-align: center;
+      color: var(--cor3);
+      font-size: 18px;
+      
+  }
